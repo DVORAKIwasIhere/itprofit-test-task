@@ -1,0 +1,42 @@
+
+.container
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    padding: 0 80px
+    margin: 20px auto
+
+.error-message
+    color: red
+    font-size: 14px
+
+.input-field
+    padding: 10px 15px
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3)
+    border: 1px solid transparent
+    border-radius: 8px
+    max-width: 350px
+    margin: 10px 0
+
+.submit-button
+    padding: 10px 15px
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6)
+    background-color: #007bff
+    color: white
+    border: 2px solid #007bff
+    border-radius: 8px
+    width: 150px
+    margin: 10px 0
+    @media (max-width: 680px)
+        margin: auto
+
+    &:disabled
+        background-color: lightgrey
+        cursor: default
+        pointer-events: none
+        color: black
+
+.input-message
+    @extend .input-field
+    resize: none
+    height: 100px
